@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/03e273a4a6.js" crossorigin="anonymous"></script>
+  <title>Yusuf Aqila</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+</head>
+
+<body>
+  <div class="main" id="fullpage">
+
+    <section>
+      <div class="homepage">
+        <div class="header">
+          <img src="logo.png" srcset="logo200.png 200w" alt="" />
+          <div class="burger">
+          <ul class="ul1">
+            <li><a href="" class="topage1" id="active">Home</a></li>
+            <li><a href="" class="topage2">About</a></li>
+            <li><a href="" class="topage3">My Project</a></li>
+          </ul>
+          <ul>
+            <li><a href="" class="topage4">Contacts</a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="isiHomePage">
+          <img src="fotodepan3.png" srcset="fotodepan3400.png 400w, fotodepan3800.png 800w" class="animate__animated animate__backInUp animate__delay-2s' alt=""  />
+          <div class="isiTextHome">
+            <h2>Saya seorang web designer</h2>
+            <button class="topage2"><a href="">About Me <i class="fa-solid fa-arrow-right-long"></i></a></i></button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+
+      <h1>About Me</h1>
+      <div class="containersec2">
+        <div class="containerfoto1" data-tilt data-tilt-glare data-tilt-max-glare="0.6" data-tilt-scale="1.1" >
+          <img src="foto3.jpg" srcset="foto3400.jpg 400w, foto3800.jpg 800w, foto31600.jpg 1600w"  alt="">
+        </div>
+        <div class="containerSlider">
+          <div class="containerSliderp">
+            <p id="ptext" class="">
+              Saya Yusuf Aqila seorang web designer pemula.
+            </p>
+            <p id="ptext">
+              Saya seorang pelajar SMA di SMAN 1 Pati.
+            </p>
+            <p id="ptext">
+              Saya menguasai bahasa HTML, CSS, Javascript dan sedikit PHP.
+            </p>
+            <p id="ptext">
+              Saya anggota OSBIT 7.0 di SMAN 1 Pati.
+            </p>
+          </div>
+          <div class="containerSliderButton">
+            <button id="button1">
+              <</button>
+                <button id="button2">></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section onmouseenter="topage3()">
+      <div class="containersec3">
+        <h1>My Projects</h1>
+        <div class="kamilaFood">
+          <img src="kamila.png" srcset="kamila400.png 400w, kamila800.png 800w"  data-tilt data-tilt-glare data-tilt-max-glare="0.6" data-tilt-scale="1.1"
+            alt="">
+          <button onclick="linkKamila()">Buka Demo-nya <i class="fa-solid fa-up-right-from-square"></i></button>
+        </div>
+        <div class="osbit">
+          <img src="osbit.png" srcset="osbit400.png 400w, osbit800.png 800w"  data-tilt data-tilt-glare data-tilt-max-glare="0.6" data-tilt-scale="1.1"
+            alt="">
+          <button onclick="linkOsbit()">Buka Demo-nya <i class="fa-solid fa-up-right-from-square"></i></button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="containersec4">
+        <h1>Hubungi Saya</h1>
+        <div class="form">
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSc8F7Y8l2AzNKpzaMXRMwGoervBd3jBWkitzrV0MsgW-poL-g/formResponse"
+          target="_self"
+          id="bootstrapForm"
+          method="POST">
+            <div class="input">
+              <div>
+                <label for="371480137">Nama</label>
+                <input type="text" name="entry.1577357706">
+              </div>
+
+              <div>
+                <label for="429695275">Nomor WA</label>
+                <input type="text" name="entry.1415091598">
+              </div>
+
+            </div>
+            <div>
+              <div class="textarea">
+                <label for="650040022">Pesan</label>
+                <textarea name="entry.1307803746" id="" cols="30" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit" value="submit">Kirim</button>
+            </div>
+          </form>
+          <h1>OR CONTACT ME ON</h1>
+          <div class="sosmed">
+            <div>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="menuButton2">
+    <div class="menubutton2con animate__animated animate__bounceInUp animate__delay-3s">
+      <div class="topage1" id="active"><i class="fa-solid fa-house"></i></div>
+      <div class="topage2"><i class="fa-solid fa-user"></i></div>
+      <div class="topage3"><i class="fa-solid fa-laptop"></i></div>
+      <div class="topage4"><i class="fa-solid fa-phone-volume"></i></div>
+    </div>
+  </div>
+  <div class="elipse">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <div class="preloader">
+    <div class="loading">
+      <img src="poi.gif" width="80">
+      <p>Harap Tunggu</p>
+    </div>
+  </div>
+  <script>
+    $(".main").onepage_scroll({
+      sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+      easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+      // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+      animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+      pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+      updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+      beforeMove: function (index) { },  // This option accepts a callback function. The function will be called before the page moves.
+      afterMove: function (index) { },   // This option accepts a callback function. The function will be called after the page moves.
+      loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+      keyboard: true,                  // You can activate the keyboard controls
+      responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+      // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+      // the browser's width is less than 600, the fallback will kick in.
+      direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+    });
+
+
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+  <script>
+// thanks page
+$('#bootstrapForm').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    $('#bootstrapForm').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        error: function () {
+            // Submit of form should be successful but JSONP callback will fail because Google Forms
+            // does not support it, so this is handled as a failure.
+            alert('Pesan berhasil dikirim, silahkan menunggu responnya!')
+            // You can also redirect the user to a custom thank-you page:
+            window.open('index.html', '_self');
+        }
+    })
+})
+
+// preloader
+$(document).ready(function(){
+$(".preloader").fadeOut();
+})
+  </script>
+  <script src="vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelector(".containerfoto1"), {
+      max: 25,
+      speed: 400
+    });
+    // Slider
+    const slides = document.querySelectorAll("#ptext");
+    const button1 = document.querySelector('#button1');
+    const button2 = document.querySelector('#button2');
+    var n = 0;
+    var r = n - 1;
+    slides[n].classList.add('active');
+    button1.addEventListener("click", () => {
+      n--;
+      r = n + 1;
+      if (n < 0) {
+        n = 3;
+      }
+      slides[n].classList.add('active');
+      slides[r].classList.remove('active');
+    })
+    button2.addEventListener("click", () => {
+      n++;
+      r = n - 1;
+      if (n > 3) {
+        n = 0;
+      }
+      slides[n].classList.add('active');
+      slides[r].classList.remove('active');
+    })
+
+    // Akhir
+    // Function buka link
+    function linkKamila() {
+      window.open('https://kamilafood.netlify.app', '_blank');
+    }
+    function linkOsbit() {
+      window.open('https://osbit8.netlify.app', '_blank');
+    }
+
+  </script>
+  <script>
+    const sections = document.querySelectorAll(section);
+
+    sections[0].addEventListener("mouseenter", () =>{
+      document.querySelector('.topage1').setAttribute('id', 'active');
+    })
+    sections[1].addEventListener("mouseenter", () =>{
+      document.querySelector('.topage2').setAttribute('id', 'active');
+    })
+    sections[2].addEventListener("mouseenter", () =>{
+      document.querySelector('.topage3').setAttribute('id', 'active');
+    })
+    sections[3].addEventListener("mouseenter", () =>{
+      document.querySelector('.topage4').setAttribute('id', 'active');
+    })
+    function topage3() {
+      document.querySelector('.topage3').setAttribute('id', 'active');
+      document.querySelector('.topage3').innerHTML="TES";
+    }
+    window.onload = topage3();
+  </script>
+</html>

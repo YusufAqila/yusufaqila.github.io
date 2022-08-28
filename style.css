@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: poppins, lato, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  width: 100%;
+  display: flex;
+}
+div.main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+div.main section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+div.elipse {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  filter: blur(160px);
+  position: absolute;
+  z-index: -1;
+}
+div.elipse div.circle {
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+}
+div.elipse div.circle:nth-child(1) {
+  background-color: #e84118;
+  width: 500px;
+  height: 350px;
+  z-index: 2;
+  position: absolute;
+  transform: translate(150px, -200px);
+}
+div.elipse div.circle:nth-child(2) {
+  background-color: #8c7ae6;
+  width: 1200px;
+  height: 500px;
+  z-index: 1;
+  position: absolute;
+  transform: translateX(-40px);
+}
+div.elipse div.circle:nth-child(3) {
+  background-color: #fbc531;
+  z-index: 3;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  transform: translate(-40px, 200px);
+}
+
+/* Home Page */
+div.main section div.homepage {
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+}
+div.main section div.homepage div.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  width: 100%;
+  height: 15vh;
+}
+div.main section div.homepage div.header img {
+  width: 150px;
+  margin-left: 20px;
+}
+div.main section div.homepage div.header div.burger ul {
+  display: flex;
+  flex-direction: row;
+}
+div.main section div.homepage div.header div.burger ul li {
+  list-style-type: none;
+  font-size: 18px;
+}
+div.main section div.homepage div.header div.burger ul li a {
+  text-decoration: none;
+  color: #0097e6;
+}
+
+div.main section div.homepage div.header div.burger ul.ul1 {
+  display: flex;
+}
+div.main section div.homepage div.header div.burger ul.ul1 li {
+  margin: 0 20px;
+}
+div.main section div.homepage div.header div.burger ul.ul1 li a {
+  padding: 7px 16px;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: all ease 0.3s;
+}
+div.main section div.homepage div.header div.burger ul.ul1 li a:hover {
+  background-color: #00a8ff;
+  color: white;
+  box-shadow: 2px 2.4px 13.9px rgba(0, 0, 0, 0.13), 22px 26px 111px rgba(0, 0, 0, 0.26);
+}
+div.main section div.homepage div.header div.burger ul:last-child li {
+  background-color: #0097e6;
+  border-radius: 50px;
+}
+div.main section div.homepage div.header div.burger ul:last-child li a {
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #0097e6;
+  border-radius: 50px;
+  box-shadow: 2px 2.4px 13.9px rgba(0, 0, 0, 0.155), 22px 26px 111px rgba(0, 0, 0, 0.31);
+  transition: all ease-in-out 0.3s;
+}
+div.main section div.homepage div.header div.burger ul:last-child li a:hover {
+  background-color: #00a8ff;
+  filter: brightness(1.1);
+}
+
+div.isiHomePage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  height: 85vh;
+}
+div.isiHomePage img {
+  width: 500px;
+}
+div.isiHomePage div.isiTextHome h2 {
+  font-size: 60px;
+  color: #f2f2f2;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  /* -webkit-text-stroke: 0.2px white; */
+  margin-bottom: 50px;
+}
+div.isiHomePage div.isiTextHome {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+div.isiHomePage div.isiTextHome button {
+  text-decoration: none;
+  border: none;
+  display: flex;
+  width: 150px;
+  border-radius: 4px;
+}
+div.isiHomePage div.isiTextHome button a {
+  padding: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  border: none;
+  background-color: #0097e6;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: -3px 36px 100px rgba(0, 0, 0, 0.3);
+  transition: all ease 0.5s;
+}
+div.isiHomePage div.isiTextHome button a:hover {
+  transform: scale(1.1);
+}
+div.isiHomePage div.isiTextHome button a i {
+  transition: all ease 0.5s;
+}
+div.isiHomePage div.isiTextHome button a:hover i {
+  transform: translate(5px);
+}
+
+/* Menu Button */
+div.menuButton2 {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  bottom: 10px;
+  z-index: 99;
+  border-radius: 10px;
+}
+div.menuButton2 div.menubutton2con {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 3.1px 9.4px rgba(0, 0, 0, 0.17), 0px 25px 75px rgba(0, 0, 0, 0.34);
+}
+div.menuButton2 div.menubutton2con div {
+  color: #0097e6;
+  cursor: pointer;
+}
+div.menuButton2 div.menubutton2con div#active {
+  color: white;
+  background-color: #0097e6;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 6px 6px 231px rgba(0, 0, 0, 0.26);
+}
+div.header div.burger {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+div.header div.burger ul.ul1 li a#active {
+  background-color: #00a8ff;
+  color: white;
+  box-shadow: 2px 2.4px 13.9px rgba(0, 0, 0, 0.13), 22px 26px 111px rgba(0, 0, 0, 0.26);
+}
+
+section.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.section2 h1 {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  user-select: none;
+  justify-content: center;
+  text-shadow: 5px 1px 14px rgba(0, 0, 0, 0.69);
+}
+section.section2 div.containersec2 {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+section.section2 div.containersec2 div.containerSlider {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: none;
+}
+section.section2 div.containersec2 div.containerSlider div.containerSliderButton {
+  margin-top: 50px;
+}
+section.section2 div.containersec2 div.containerSlider div.containerSliderButton button {
+  width: 80px;
+  height: 60px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 40px;
+  color: white;
+  transition: all ease 0.3s;
+}
+section.section2 div.containersec2 div.containerSlider div.containerSliderButton button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+section.section2 div.containersec2 div.containerSlider div.containerSliderp {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: none;
+  justify-content: center;
+}
+section.section2 div.containersec2 div.containerSlider p {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  user-select: none;
+  min-width: 400px;
+  display: none;
+}
+section.section2 div.containersec2 div.containerSlider p.active {
+  display: flex;
+}
+section.section2 div.containersec2 div.containerfoto1 {
+  border-radius: 15px;
+  height: 400px;
+  width: 350px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #0097e6;
+}
+img[src='foto3.jpg'] {
+  width: 340px;
+  height: 400px;
+  border-radius: 0 15px 15px 0;
+}
+
+/* Project Section */
+div.containersec3 div img {
+  width: 400px;
+  border-radius: 20px;
+  border: 1px solid white;
+  margin-right: 100px;
+  user-select: none;
+  box-shadow: 0px 3.1px 9.4px rgba(0, 0, 0, 0.08), 0px 25px 75px rgba(0, 0, 0, 0.16);
+}
+div.containersec3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+div.containersec3 div {
+  width: 100%;
+  height: 45vh;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 100px;
+}
+div.containersec3 h1 {
+  color: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  text-shadow: 5px 1px 14px rgba(0, 0, 0, 0.69);
+  user-select: none;
+}
+div.containersec3 div button {
+  border: none;
+  text-decoration: none;
+  color: white;
+  background-color: #0097e6;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 3.1px 9.4px rgba(0, 0, 0, 0.165), 0px 25px 75px rgba(0, 0, 0, 0.33);
+  font-family: poppins, sans-serif;
+  transition: all ease 0.5s;
+}
+div.containersec3 div button:hover {
+  background-color: #39b1f1c7;
+  transform: scale(1.1);
+}
+
+/* Form Section */
+section div.containersec4 form div:first-child {
+  display: flex;
+  flex-direction: row;
+}
+section div.containersec4 form div:first-child div {
+  display: flex;
+  flex-direction: column;
+}
+section div.containersec4 form div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+section div.containersec4 form div input {
+  outline: none;
+  border: none;
+}
+section div.containersec4 form div textarea {
+  outline: none;
+  border: none;
+}
+section div.containersec4 {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+section div.containersec4 h1 {
+  color: white;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  text-shadow: 5px 1px 14px rgba(0, 0, 0, 0.69);
+  user-select: none;
+}
+section div.containersec4 div.form {
+  width: 70%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  flex-direction: column;
+  align-items: center;
+}
+section div.containersec4 div.form form {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+section div.containersec4 div.form form div {
+  width: 100%;
+}
+section div.containersec4 div.form form div div label {
+  width: 90%;
+  margin: 10px;
+  font-weight: 600;
+  user-select: none;
+}
+section div.containersec4 div.form form div.input {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+section div.containersec4 div.form form div.input div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+section div.containersec4 div.form form div div input {
+  width: 90%;
+  border-bottom: 4px solid white;
+  border-bottom: 4px solid white;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(100px);
+  border-radius: 4px;
+  box-shadow: 0.9px 1.1px 4.6px rgba(0, 0, 0, 0.12), 7px 9px 37px rgba(0, 0, 0, 0.24);
+  font-size: 16px;
+  padding: 10px;
+}
+section div.containersec4 div.form form div.input div label {
+  width: 90%;
+  font-size: 16px;
+  user-select: none;
+  color: white;
+}
+section div.containersec4 div.form form div div.textarea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+section div.containersec4 div.form form div div textarea {
+  width: 96%;
+  border-bottom: 4px solid white;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(100px);
+  border-radius: 4px;
+  box-shadow: 0.9px 1.1px 4.6px rgba(0, 0, 0, 0.12), 7px 9px 37px rgba(0, 0, 0, 0.24);
+  font-size: 16px;
+  padding: 10px;
+}
+section div.containersec4 div.form form div div label {
+  width: 96%;
+  font-size: 16px;
+  user-select: none;
+  color: white;
+}
+section div.containersec4 div.form form div.button button {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(100px);
+  box-shadow: 0.9px 1.1px 4.6px rgba(0, 0, 0, 0.12), 7px 9px 37px rgba(0, 0, 0, 0.24);
+  transition: all ease 0.3s;
+  font-weight: 600;
+  border: 1px solid white;
+  color: white;
+}
+section div.containersec4 div.form form div.button button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+section div.containersec4 div.form form div.button {
+  width: 96%;
+  display: flex;
+  justify-content: flex-start;
+}
+section div.containersec4 div.form div.sosmed {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+section div.containersec4 div.form h1 {
+  color: white;
+  font-size: 30px;
+  user-select: none;
+}
+section div.containersec4 div.form div.sosmed div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(100px);
+  box-shadow: 0.9px 1.1px 4.6px rgba(0, 0, 0, 0.12), 7px 9px 37px rgba(0, 0, 0, 0.24);
+  margin: 10px 40px;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+}
+section div.containersec4 div.form div.sosmed div:last-child:hover {
+  background: #009588;
+}
+section div.containersec4 div.form div.sosmed div:first-child:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+section div.containersec4 div.form div.sosmed div a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+}
+.preloader .loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font: 14px arial;
+}
